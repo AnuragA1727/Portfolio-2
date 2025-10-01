@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Portfolio.</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr/>
+    <main class="">
+      <section id="home" class="home">
+        <div class="leftsection">
+          Hi, My name is <span class="name">Anurag</span>, <br />
+          and I am a Passionate <br />
+          <span id="element" class="name"></span>
+        </div>
+        <div class="rightsection">
+          <img src="Developer.png" />
+        </div>
+      </section>
+      <hr />
+      <section id="about" class="about">
+        <h1>About <span>Me.</span></h1>
+        <div>
+          Hi, I'm <span class="name-about">Anurag Arora</span> 
+          <br><br>
+           I'm a certified <span>Full Stack Developer</span> with <span>AI</span> integration, trained to design and build modern, scalable, and intelligent web applications.
+          <br><br>
+          <span>During my course, I gained hands-on experience with:</span>
+            <dl>
+                <dt>Frontend Development:</dt>
+                <dd>HTML, CSS, JavaScript, React.js</dd>
+                <dt>Backend Development:</dt>
+                <dd>Node.js, Express.js</dd>
+                <dt>Databases:</dt>
+                <dd>MongoDB for storing and managing data</dd>
+                <dt>AI Integration:</dt>
+                <dd>Adding AI-powered features using APIs and tools</dd>
+                <dt>Deployment & Version Control:</dt>
+                <dd>Git, GitHub, and cloud hosting platforms</dd>
+            </dl>    
+
+          <br><br>
+          The program helped me strengthen my problem-solving skills, sharpen my coding practices, and build end-to-end projects that combine functionality with clean design.
+          <br><br>
+          I believe “Slow progress is better than no progress” — and completing this journey has given me the confidence to keep learning, experimenting, and building impactful applications.
+          <br><br>
+          My goal is to create solutions that not only solve problems but also enhance user experiences, and I'm eager to apply my skills in real-world opportunities.
+        </div>
+      </section>
+      <hr>
+      <section id="projects" class="projects">
+        <h1>My <span>Projects</span></h1>
+        <div class="project-cards">
+
+          <div class="card">
+            <img src="project1.png" alt="Project 1" />
+            <h2>Project Title 1</h2>
+            <p>
+              Brief description of Project 1. This project involves...
+            </p>
+            <button><a href="#" class="btn">View Project</a></button>
+        </div>
+
+          <div class="card">
+            <img src="project2.png" alt="Project 2" />
+            <h2>Project Title 2</h2>
+            <p>
+              Brief description of Project 2. This project focuses on...
+            </p>
+            <button><a href="#" class="btn">View Project</a></button>
+          </div>
+         
+          <div class="card">
+            <img src="project3.png" alt="Project 3" />
+            <h2>Project Title 3</h2>
+            <p>
+              Brief description of Project 3. This application is designed to...
+            </p>
+            <button><a href="#" class="btn">View Project</a></button>
+          </div>
+      </section>
+    <hr>
+    <section id="contact" class="contact">
+        <div class="leftsection">
+            <h1>Got a <span>Project</span> for me?</h1>
+
+        
+            <h1>Contact me</h1>
+        </div>
+
+            <div class="rightsection">
+            <form>
+                <label for="First Name">First Name</label>
+                <input type="text" placeholder="First Name" id="First Name" name="First Name" required>
+
+                <label for="Last Name">Last Name</label>
+                <input type="text" placeholder="Last Name" id="Last Name" name="Last Name" required>
+            
+                <br>
+
+                <label for="Email">Email</label>
+                <input type="text" placeholder="Email" name="Email" id="Email" required>
+            
+                <br>
+
+                <label for="messagebox">Message :</label>
+                <textarea name="messagebox" id="messagebox" cols="40" rows="5" required></textarea>
+            
+                <br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </section>
+    </main>
+    <hr/>
+    <footer>
+        &copy;2025 My Website
+
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Full Stack Developer.",
+          "Web Developer.",
+          "MERN Stack Developer.",
+        ],
+        loop: true,
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
