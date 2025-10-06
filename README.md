@@ -1,2 +1,2 @@
-# Portfolio1
-My first attempt of making a portfolio using just HTML and CSS (No JS).
+# Portfolio-2
+My Second attempt of making a portfolio using just HTML and CSS (No JS).
