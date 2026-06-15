@@ -4,7 +4,7 @@ A personal developer portfolio built with React and Vite. This project showcases
 
 ## Live Demo
 
-> Add your deployed portfolio URL here once the site is live.
+- Live Link: https://anuragarora-portfolio-2026.netlify.app/
 
 ## Repository
 
