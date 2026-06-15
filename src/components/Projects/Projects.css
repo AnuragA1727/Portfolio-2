@@ -1,0 +1,87 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: default;
+}
+
+.project-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 173, 181, 0.14);
+    border-color: var(--accent);
+}
+
+.card-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--accent);
+    opacity: 0.2;
+    line-height: 1;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.card-desc {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    flex-grow: 1;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.card-tag {
+    background: var(--bg-surface);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+}
+
+.card-btn {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 0;
+    border-top: 1px solid var(--border);
+    transition: letter-spacing 0.2s ease, color 0.2s ease;
+}
+
+.card-btn:hover {
+    letter-spacing: 0.5px;
+    color: var(--accent-dark);
+}
+
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 580px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

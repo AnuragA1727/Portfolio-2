@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --bg: #222831;
+  --bg-card: #2c3340;
+  --bg-surface: #393e46;
+  --accent: #00adb5;
+  --accent-dark: #008b95;
+  --accent-glow: rgba(0, 173, 181, 0.15);
+  --text: #eeeeee;
+  --text-muted: #aaaaaa;
+  --border: rgba(0, 173, 181, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 3px;
+}
+
+/* Section shared */
+.section {
+  padding: 100px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 60px;
+  color: var(--text);
+}
+
+.section-title span {
+  color: var(--accent);
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background: var(--border);
+  margin: 0 80px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 24px;
+  }
+
+  .divider {
+    margin: 0 24px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
